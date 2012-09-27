@@ -1,13 +1,12 @@
-Welcome to Ruby IMDB
+Welcome to Ruby IMDB-SCAN
 --------------------
 
 ruby-imdb is IMDB parsing library for Ruby.
-it's an upgrade from this gem: http://github.com/yalcin/ruby-imdb
+It's an upgrade from this gem: http://github.com/yalcin/ruby-imdb
 
 Features
 --------
 
-- Dynamic Caching with MongoDB backend
 - Object Oriented design
 - Fast access to data
 
@@ -15,7 +14,7 @@ Download
 --------
 
 - [sudo] gem i imdb-scan
-- http://github.com/oniram88/imdb-scan
+- https://github.com/oniram88/imdb-scan.git
 - git clone git://github.com/oniram88/imdb-scan.git
 
 
@@ -47,7 +46,7 @@ Are Under features directory
 
 Authors
 -------
-- Yalcin ACIKYILDIZ (mailto:yalcin@webliyacelebi.com)
+- Marino Bonetti (mailto:marinobonetti@gmail.com)
 
 
 This library is released under the terms of the GNU/GPL.
