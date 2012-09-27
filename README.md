@@ -1,8 +1,9 @@
 Welcome to Ruby IMDB-SCAN
 --------------------
 
-ruby-imdb is IMDB parsing library for Ruby.
-It's an upgrade from this gem: http://github.com/yalcin/ruby-imdb
+- ruby-imdb is IMDB parsing library for Ruby.
+- It's an upgrade from this gem: http://github.com/yalcin/ruby-imdb
+- It's retrocompatible with ruby-imdb from http://github.com/yalcin/ruby-imdb
 
 Features
 --------
