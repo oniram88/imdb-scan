@@ -1,6 +1,6 @@
 .bundle
 pkg
-ruby-imdb*.gem
+imdb-scan-*.gem
 .idea
 .yardoc
 doc
