@@ -36,13 +36,15 @@ Usage
       p movie.poster
     end
 
-    movie = IMDB::Movie.new('0120669')
-    p movie.poster
+    movie = IMDB::Movie.new(416320)
+    p movie.title => "Match Point"
+    p movie.cast.length => 37
+    p movie.cast.first.name => "Jonathan Rhys Meyers"
+    p movie.cast.first.char => "Chris Wilton"
+    p movie.cast.first.person.filmography.length => 82
+    p movie.director  => "Woody Allen"
+    p movie.director_person.filmography.length   =>  399   (this are all Movies)
 
-Examples
---------
-
-Are Under features directory
 
 Authors
 -------
