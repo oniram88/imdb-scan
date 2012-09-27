@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{imdb-scan}
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Marino Bonetti","Yalcin Acikyildiz"]
@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.email = %q{marinobonetti@gmail.com}
   s.extra_rdoc_files = %w(LICENSE README.md)
   s.files = %w(.gitignore LICENSE README.md Rakefile VERSION features/movie.feature features/person.feature features/search.feature features/step_definitions/movie_steps.rb features/step_definitions/person_steps.rb features/step_definitions/search_steps.rb lib/configuration.rb lib/imdb.rb lib/imdb/movie.rb lib/imdb/person.rb lib/imdb/search.rb lib/imdb/skeleton.rb lib/imdb/cast.rb imdb-scan.gemspec)
-  s.homepage = %q{http://github.com/yalcin/ruby-imdb}
+  s.homepage = %q{https://github.com/oniram88/imdb-scan}
   s.rdoc_options = %w(--charset=UTF-8)
   s.require_paths = %w(lib)
   s.rubygems_version = %q{1.3.6}
