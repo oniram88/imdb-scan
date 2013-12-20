@@ -35,7 +35,7 @@ module IMDB
     #Get the name of the person
     #@return [String]
     def name
-      bio_document.at("a[@class='main']").inner_text rescue nil
+      bio_document.css("h3[itemprop='name'] a").first.inner_text rescue nil
     end
 
     #Get The Real Born name of the Person

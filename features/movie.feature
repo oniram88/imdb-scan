@@ -3,7 +3,7 @@ Feature: Get movie information
     Given I have movie name called "Fear and Loathing In Las Vegas"
     When I get first entry from result set
     Then "Johnny Depp" should be act as "Raoul Duke"
-    And the genres should be "Adventure, Drama"
+    And the genres should be "Adventure, Comedy"
     And the rating should be a number between 0 and 10
     And the release year should be 1999
     And the poster should be a link to an image

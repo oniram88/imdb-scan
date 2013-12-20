@@ -77,8 +77,8 @@ module IMDB
     # Get release date
     # @return [String]
     def release_date
-      if (node = doc.xpath("//h4[contains(., 'Release Date')]/..")).length > 0
-        date = node.search("time").first["datetime"]
+      if (node =doc.css('.infobar span.nobr meta[itemprop="datePublished"]')).length > 0
+        date = node.first['content']
         if date.match /^\d{4}$/
           "#{date}-01-01"
         else
@@ -114,7 +114,7 @@ module IMDB
     # @return [Array]
     def genres
       doc.xpath("//h4[contains(., 'Genre')]/..").search("a").map { |g|
-        g.content unless g.content =~ /See more/
+        g.content.strip unless g.content =~ /See more/
       }.compact
     rescue
       nil
@@ -145,7 +145,7 @@ module IMDB
 
     # @return [String]
     def short_description
-      doc.at("#overview-top p[itemprop=description]").text.strip
+      doc.at("#overview-top p[itemprop=description]").try(:text).try(:strip)
     end
 
     private
