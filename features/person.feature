@@ -3,7 +3,7 @@ Feature: Get Person information
   Scenario: Get person information and filmography list from IMDB
     Given I have person with id "0000288"
     When the name should be "Christian Bale"
-    When the films where he was actor should be "135"
+    When the films where he was actor should be "146"
     When the height of the actor should be "1.83 m"
     When the photo should be a link to an image
     When the birth date should be "1974-01-30"
