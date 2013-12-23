@@ -68,7 +68,7 @@ module IMDB
     # @return [Array]
     def photos
       begin
-        doc.search('#main .thumb_list img').map { |i| i["src"] }
+        doc.search('#main .media_index_thumb_list img').map { |i| i["src"] }
       rescue
         nil
       end
@@ -137,7 +137,7 @@ module IMDB
     # Writer List
     # @return [Array]
     def writers
-      doc.xpath("//a[@name='writers']/../../../..").search('a[@href^="/name/nm"]').map { |w|
+      doc.css("h4:contains('Writing')").first.next_element.css('a[@href^="/name/nm"]').map { |w|
         profile = w['href'].match(/\/name\/nm([0-9]+)/)[1] rescue nil
         IMDB::Person.new(profile) unless profile.nil?
       }

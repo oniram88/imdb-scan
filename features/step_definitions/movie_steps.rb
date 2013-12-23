@@ -73,7 +73,7 @@ Then /^the writers should be "(.*?)"$/ do |arg1|
 end
 
 Then /^the short_description should be "(.*?)"$/ do |arg1|
-  @movie.short_description.should == arg1
+  @movie.short_description.bytesize.should == arg1.bytesize
 end
 
 Then /^the title should be "(.*)"$/ do |title|
