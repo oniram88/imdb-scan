@@ -44,7 +44,7 @@ module IMDB
     # Get movie title
     # @return [String]
     def title
-      doc.at("//head/meta[@name='title']")["content"].split(/\(\d+\)/)[0].strip! ||
+      doc.at("//head/meta[@name='title']")["content"].split(/\(.*\)/)[0].strip! ||
           doc.at("h1.header").children.first.text.strip
 
     end
