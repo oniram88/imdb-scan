@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    imdb-scan (0.0.2)
+    imdb-scan (0.0.3.1)
       chronic (>= 0.2.3)
       json (>= 1.4.3)
       mongo (>= 1.0.1)

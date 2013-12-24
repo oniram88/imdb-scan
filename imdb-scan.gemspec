@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{imdb-scan}
-  s.version = "0.0.2"
+  s.version = "0.0.3.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Marino Bonetti","Yalcin Acikyildiz"]
-  s.date = %q{2012-09-27}
+  s.date = %q{2013-12-24}
   s.description = %q{Ruby IMDB Parsing Library}
   s.email = %q{marinobonetti@gmail.com}
   s.extra_rdoc_files = %w(LICENSE README.md)
