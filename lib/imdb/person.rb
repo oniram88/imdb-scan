@@ -69,7 +69,7 @@ module IMDB
     #Get the height
     #@return [String]
     def height
-      bio_document.at("h5[text()*='Height']").next.inner_text.match(/\((.+)\)/)[1] rescue nil
+      bio_document.css("#bio_content td.label:contains('Height')").first.next_element.inner_text.match(/\(([0-9\.]+).*\)/)[1].to_f rescue nil
     end
 
     #Get The Biography

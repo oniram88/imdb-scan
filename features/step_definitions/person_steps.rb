@@ -27,7 +27,7 @@ Then /^the films where he was actor should be "(.*)"$/ do |number|
 end
 
 Then /^the height of the actor should be "(.*)"$/ do |height|
-  @result.height.should == height.to_s
+  @result.height.should == height.to_f
 end
 
 Then /^the photo should be a link to an image$/ do
