@@ -41,14 +41,17 @@ module IMDB
     #Get The Real Born name of the Person
     #@return [String]
     def real_name
-      bio_document.at("h5[text()*='Birth Name']").next.inner_text.strip rescue nil
+      bio_document.at("td.label[text()*='Birth Name']").
+          next_element.inner_text.strip rescue nil
     end
 
     #Get The Birth Date
     #@return [Date]
     def birthdate
-      date_month = bio_document.at("h5[text()*='Date of Birth']").next_element.inner_text.strip rescue ""
-      year = bio_document.at("a[@href*='birth_year']").inner_text.strip rescue ""
+      month_data_element = bio_document.at("td.label[text()*='Date of Birth']").
+          next_element.first_element_child
+      date_month = month_data_element.inner_text.strip rescue ""
+      year = month_data_element.next_element.inner_text.strip rescue ""
       Date.parse("#{date_month} #{year}") rescue nil
     end
 
