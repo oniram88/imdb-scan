@@ -28,6 +28,5 @@ Then /the first title should be "(.*)"/ do |title|
 end
 
 Then /The result (\d+) should be unique in the list/ do |id|
-  puts @result.inspect
   @result.select { |f| f.imdb_id==id }.length.should == 1
 end
